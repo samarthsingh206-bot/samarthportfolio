@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="bright">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Samarth Singh | Aspiring CA & CMA | IIMB BBA DBE</title>
+  <title>Samarth Singh | Rajput • Aspiring CA & CMA • IIMB BBA DBE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="theme-bright">
 
-  <!-- Background decorative light blooms -->
+  <!-- Background decorative light blooms (Bright & Royal ambient glows) -->
   <div class="glow-bg glow-bg-1" aria-hidden="true"></div>
   <div class="glow-bg glow-bg-2" aria-hidden="true"></div>
   <div class="glow-bg glow-bg-3" aria-hidden="true"></div>
@@ -22,17 +22,29 @@
       <a class="brand" href="#hero">
         <span class="brand-avatar">SS</span>
         <div class="brand-text">
-          <span class="brand-name">Samarth Singh</span>
+          <div class="brand-name-wrap">
+            <span class="brand-name">Samarth Singh</span>
+            <span class="rajput-pill">Rajput</span>
+          </div>
           <span class="brand-tag">IIMB BBA DBE</span>
         </div>
       </a>
+
       <ul class="nav-links">
         <li><a class="nav-link" href="#academic-cycle">Academic Cycle</a></li>
         <li><a class="nav-link" href="#academic-table">Qualifications</a></li>
         <li><a class="nav-link" href="#highlights">Highlights</a></li>
         <li><a class="nav-link" href="#resume">Resume</a></li>
       </ul>
-      <a class="button button-nav" href="#contact">Get in Touch</a>
+
+      <div class="nav-actions">
+        <!-- Bright / Dark Theme Switcher Button -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Bright/Dark theme" title="Toggle Theme">
+          <span class="theme-icon">☀️</span>
+          <span class="theme-label">Bright</span>
+        </button>
+        <a class="button button-nav" href="#contact">Get in Touch</a>
+      </div>
     </nav>
   </header>
 
@@ -40,12 +52,21 @@
     <!-- Hero Section -->
     <section id="hero">
       <div class="hero-content">
-        <div class="hero-badge animate-fade">
-          <span class="badge-dot"></span>
-          <span>Academic & Leadership Portfolio</span>
+
+        <!-- Rajput & Academic Badge -->
+        <div class="hero-badge badge-rajput animate-fade">
+          <span class="rajput-sun">☀️</span>
+          <span class="badge-accent-text">Rajput</span>
+          <span class="badge-sep">•</span>
+          <span>IIMB BBA DBE</span>
+          <span class="badge-sep">•</span>
+          <span>Aspiring CA &amp; CMA</span>
         </div>
 
-        <h1 class="hero-title animate-fade">Samarth Singh</h1>
+        <h1 class="hero-title animate-fade">
+          Samarth Singh
+          <span class="rajput-royal-crest" title="Rajput Heritage">⚔️</span>
+        </h1>
 
         <!-- Subtitle: Full expanded form as strictly requested -->
         <h2 class="hero-subtitle animate-fade">
@@ -107,7 +128,7 @@
           <div class="cycle-card">
             <div class="cycle-card-header">
               <span class="badge badge-cma">Cost and Management Accountant</span>
-              <span class="cycle-status">1st Attempt Cleared</span>
+              <span class="cycle-status status-cleared">1st Attempt Cleared</span>
             </div>
             <h3>CMA Foundation</h3>
             <p class="cycle-institution">The Institute of Cost Accountants of India (ICMAI)</p>
@@ -124,7 +145,7 @@
           <div class="cycle-card">
             <div class="cycle-card-header">
               <span class="badge badge-ca">Chartered Accountant</span>
-              <span class="cycle-status">1st Attempt Cleared</span>
+              <span class="cycle-status status-cleared">1st Attempt Cleared</span>
             </div>
             <h3>CA Foundation</h3>
             <p class="cycle-institution">The Institute of Chartered Accountants of India (ICAI)</p>
@@ -158,7 +179,7 @@
           <div class="cycle-card">
             <div class="cycle-card-header">
               <span class="badge badge-school">Higher Secondary</span>
-              <span class="cycle-status">Score: 87.2%</span>
+              <span class="cycle-status status-percent">Score: 87.2%</span>
             </div>
             <h3>Class 12th</h3>
             <p class="cycle-institution">Commerce with Mathematics</p>
@@ -175,7 +196,7 @@
           <div class="cycle-card">
             <div class="cycle-card-header">
               <span class="badge badge-school">Secondary School</span>
-              <span class="cycle-status">Score: 88.8%</span>
+              <span class="cycle-status status-percent">Score: 88.8%</span>
             </div>
             <h3>Class 10th</h3>
             <p class="cycle-institution">Secondary School Examination</p>
@@ -442,12 +463,15 @@
 
       <article class="sheet">
         <header class="sheet-top">
-          <h2 class="sheet-name">SAMARTH SINGH</h2>
+          <div class="sheet-title-row">
+            <h2 class="sheet-name">SAMARTH SINGH</h2>
+            <span class="sheet-rajput-tag">Rajput</span>
+          </div>
           <p class="sheet-contact">New Delhi, India &nbsp;|&nbsp; <a href="mailto:samarthsingh206@gmail.com">samarthsingh206@gmail.com</a></p>
         </header>
 
         <h3 class="sheet-heading">Profile</h3>
-        <p class="sheet-p">Aspiring Chartered Accountant and Cost and Management Accountant. First-year student of IIM Bangalore (BBA DBE), leading an unofficial student community of 1,000+ members and bringing proven competitive excellence in commerce and national sports.</p>
+        <p class="sheet-p">Aspiring Chartered Accountant and Cost and Management Accountant. Rajput heritage. First-year student of IIM Bangalore (BBA DBE), leading an unofficial student community of 1,000+ members and bringing proven competitive excellence in commerce and national sports.</p>
 
         <h3 class="sheet-heading">Experience & Leadership</h3>
         <div class="resume-entry">
@@ -512,7 +536,7 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <p>&copy; 2026 Samarth Singh &bull; Aspiring CA &amp; CMA &bull; IIMB BBA DBE</p>
+      <p>&copy; 2026 Samarth Singh &bull; Rajput &bull; Aspiring CA &amp; CMA &bull; IIMB BBA DBE</p>
       <div class="footer-links">
         <a href="#hero">Home</a>
         <a href="#academic-cycle">Academic Cycle</a>
@@ -521,6 +545,44 @@
       </div>
     </div>
   </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const themeBtn = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const body = document.body;
+    const themeIcon = document.querySelector('.theme-icon');
+    const themeLabel = document.querySelector('.theme-label');
+
+    // Retrieve saved theme or default to bright
+    const currentTheme = localStorage.getItem('samarth_theme') || 'bright';
+    applyTheme(currentTheme);
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        root.setAttribute('data-theme', 'dark');
+        body.classList.remove('theme-bright');
+        body.classList.add('theme-dark');
+        if (themeIcon) themeIcon.textContent = '🌙';
+        if (themeLabel) themeLabel.textContent = 'Dark';
+      } else {
+        root.setAttribute('data-theme', 'bright');
+        body.classList.remove('theme-dark');
+        body.classList.add('theme-bright');
+        if (themeIcon) themeIcon.textContent = '☀️';
+        if (themeLabel) themeLabel.textContent = 'Bright';
+      }
+    }
+
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        const newTheme = isDark ? 'bright' : 'dark';
+        localStorage.setItem('samarth_theme', newTheme);
+        applyTheme(newTheme);
+      });
+    }
+  </script>
 
 </body>
 </html>
