@@ -23,7 +23,112 @@
   <header class="topbar">
     <nav class="nav">
       <a class="brand" href="#hero">
-        <span class="brand-avatar">SS</span>
+        <!-- Two Heavy Curved Talwars Clashing in Slow Cinematic Duel -->
+        <div class="swords-avatar-wrap" title="Dueling Warriors' Talwars">
+          <svg class="clashing-swords-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <!-- Damascus Steel Blade Left Gradient -->
+              <linearGradient id="bladeLeftGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#334155"/>
+                <stop offset="35%" stop-color="#94a3b8"/>
+                <stop offset="55%" stop-color="#f8fafc"/>
+                <stop offset="85%" stop-color="#cbd5e1"/>
+                <stop offset="100%" stop-color="#64748b"/>
+              </linearGradient>
+
+              <!-- Damascus Steel Blade Right Gradient -->
+              <linearGradient id="bladeRightGrad" x1="100%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#334155"/>
+                <stop offset="35%" stop-color="#94a3b8"/>
+                <stop offset="55%" stop-color="#f8fafc"/>
+                <stop offset="85%" stop-color="#cbd5e1"/>
+                <stop offset="100%" stop-color="#64748b"/>
+              </linearGradient>
+
+              <!-- Royal Gold Hilt Gradient -->
+              <linearGradient id="hiltGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fef08a"/>
+                <stop offset="45%" stop-color="#d97706"/>
+                <stop offset="100%" stop-color="#78350f"/>
+              </linearGradient>
+
+              <!-- Spark Glow Filter -->
+              <filter id="sparkGlow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- LEFT SWORD (Heavy Curved Talwar) -->
+            <g class="sword-left-group">
+              <!-- Curved Steel Blade with Spine and Bevel -->
+              <path d="M26 100 L35 93 L76 34 Q89 16 97 10 Q83 24 61 48 L29 97 Z" fill="url(#bladeLeftGrad)" stroke="#334155" stroke-width="0.9"/>
+              <!-- Razor Cutting Edge Highlight -->
+              <path d="M34 94 L75 36 Q86 21 95 12" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+              <!-- Fuller / Blood Groove -->
+              <path d="M38 90 L68 44 Q76 32 82 24" stroke="rgba(51, 65, 85, 0.6)" stroke-width="0.8" stroke-linecap="round"/>
+              
+              <!-- Hilt: Crossguard Quillons with Rounded Terminals -->
+              <path d="M19 94 Q29 99 39 88 Q37 84 32 86 Q26 89 22 90 Z" fill="url(#hiltGoldGrad)" stroke="#78350f" stroke-width="0.8"/>
+              
+              <!-- Knuckle Bow Guard (D-shaped handguard) -->
+              <path d="M20 93 Q10 99 12 110 Q14 115 19 113" stroke="url(#hiltGoldGrad)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              
+              <!-- Grip -->
+              <rect x="17" y="99" width="12" height="5.5" rx="2" transform="rotate(-42 23 102)" fill="#881337" stroke="#4c0519" stroke-width="0.7"/>
+              
+              <!-- Traditional Disc Pommel with Dome Spire -->
+              <circle cx="16" cy="111" r="6" fill="url(#hiltGoldGrad)" stroke="#78350f" stroke-width="0.8"/>
+              <circle cx="16" cy="111" r="2.5" fill="#451a03"/>
+              <path d="M16 111 L14 116" stroke="#78350f" stroke-width="1.2" stroke-linecap="round"/>
+            </g>
+
+            <!-- RIGHT SWORD (Heavy Curved Talwar) -->
+            <g class="sword-right-group">
+              <!-- Curved Steel Blade with Spine and Bevel -->
+              <path d="M94 100 L85 93 L44 34 Q31 16 23 10 Q37 24 59 48 L91 97 Z" fill="url(#bladeRightGrad)" stroke="#334155" stroke-width="0.9"/>
+              <!-- Razor Cutting Edge Highlight -->
+              <path d="M86 94 L45 36 Q34 21 25 12" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+              <!-- Fuller / Blood Groove -->
+              <path d="M82 90 L52 44 Q44 32 38 24" stroke="rgba(51, 65, 85, 0.6)" stroke-width="0.8" stroke-linecap="round"/>
+              
+              <!-- Hilt: Crossguard Quillons with Rounded Terminals -->
+              <path d="M101 94 Q91 99 81 88 Q83 84 88 86 Q94 89 98 90 Z" fill="url(#hiltGoldGrad)" stroke="#78350f" stroke-width="0.8"/>
+              
+              <!-- Knuckle Bow Guard (D-shaped handguard) -->
+              <path d="M100 93 Q110 99 108 110 Q106 115 101 113" stroke="url(#hiltGoldGrad)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              
+              <!-- Grip -->
+              <rect x="91" y="99" width="12" height="5.5" rx="2" transform="rotate(42 97 102)" fill="#881337" stroke="#4c0519" stroke-width="0.7"/>
+              
+              <!-- Traditional Disc Pommel with Dome Spire -->
+              <circle cx="104" cy="111" r="6" fill="url(#hiltGoldGrad)" stroke="#78350f" stroke-width="0.8"/>
+              <circle cx="104" cy="111" r="2.5" fill="#451a03"/>
+              <path d="M104 111 L106 116" stroke="#78350f" stroke-width="1.2" stroke-linecap="round"/>
+            </g>
+
+            <!-- CLASH IMPACT & BURSTING SPARKS -->
+            <g class="clash-effects" filter="url(#sparkGlow)">
+              <!-- Shockwave Flash Ring -->
+              <circle class="clash-ring" cx="60" cy="40" r="14" stroke="#fef08a" stroke-width="1.5" fill="none"/>
+              
+              <!-- Intense Core Flash -->
+              <circle class="clash-core" cx="60" cy="40" r="6" fill="#ffffff"/>
+              
+              <!-- Sharp Burst Sparks -->
+              <path class="clash-burst" d="M60 20 L62 34 L78 30 L65 40 L78 50 L63 45 L60 60 L57 45 L42 50 L55 40 L42 30 L58 34 Z" fill="#fde047"/>
+              
+              <!-- Flying Steel Embers -->
+              <circle class="ember ember-1" cx="68" cy="28" r="1.8" fill="#f97316"/>
+              <circle class="ember ember-2" cx="50" cy="24" r="1.5" fill="#ef4444"/>
+              <circle class="ember ember-3" cx="74" cy="46" r="1.6" fill="#fbbf24"/>
+              <circle class="ember ember-4" cx="46" cy="48" r="1.4" fill="#f59e0b"/>
+            </g>
+          </svg>
+        </div>
         <div class="brand-text">
           <span class="brand-name">Samarth Singh</span>
           <span class="brand-tag">IIMB BBA DBE</span>

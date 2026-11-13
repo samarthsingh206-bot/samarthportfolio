@@ -231,6 +231,226 @@ a:hover {
   text-decoration: none;
 }
 
+/* Heavy Dueling Talwars in Top Left Corner - Slow, Cinematic & Realistic Combat */
+.swords-avatar-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, #fffbf5 0%, #fef3c7 100%);
+  border: 1.5px solid rgba(217, 119, 6, 0.45);
+  box-shadow: 0 4px 16px rgba(217, 119, 6, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] .swords-avatar-wrap {
+  background: rgba(234, 88, 12, 0.18);
+  border-color: rgba(234, 88, 12, 0.45);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+.brand:hover .swords-avatar-wrap {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(217, 119, 6, 0.35);
+}
+
+.clashing-swords-svg {
+  width: 46px;
+  height: 46px;
+  overflow: visible;
+}
+
+/* Left Talwar - Slow, Heavy Martial Striking & Parrying */
+.sword-left-group {
+  transform-origin: 23px 105px;
+  animation: swordMartialFightLeft 4.2s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+/* Right Talwar - Dynamic Interception & Blade Lock */
+.sword-right-group {
+  transform-origin: 97px 105px;
+  animation: swordMartialFightRight 4.2s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+/* Dynamic Clash Effects (Ring, Sparks, Core, Embers) */
+.clash-effects {
+  transform-origin: 60px 40px;
+  animation: swordMartialSparks 4.2s ease-out infinite;
+}
+
+/* Left Sword Choreography:
+   0-24%: Slow combat stalking in ready guard
+   24-33%: Heavy diagonal cleave windup & explosive slash
+   33-54%: BLADE LOCK! Blades press together with high-tension shudder
+   54-66%: Forced push-off & smooth heavy recoil
+   66-76%: Counter-parry strike & spark
+   76-88%: Edge slide & disengage
+   88-100%: Slow deliberate return to combat stance
+*/
+@keyframes swordMartialFightLeft {
+  0% {
+    transform: rotate(-12deg);
+  }
+  14% {
+    transform: rotate(-15deg) translateY(1px); /* slow stance adjustment */
+  }
+  24% {
+    transform: rotate(-22deg) translateX(-2px); /* deliberate heavy windup */
+  }
+  33% {
+    transform: rotate(20deg) translateX(1px);   /* HEAVY IMPACT STRIKE */
+  }
+  /* --- LOCKED BLADES TENSION STRUGGLE --- */
+  36% {
+    transform: rotate(19deg) translate(0.6px, -0.4px);
+  }
+  40% {
+    transform: rotate(20.5deg) translate(-0.4px, 0.4px);
+  }
+  44% {
+    transform: rotate(19.2deg) translate(0.4px, -0.2px);
+  }
+  48% {
+    transform: rotate(20deg) translate(-0.3px, 0.3px);
+  }
+  53% {
+    transform: rotate(19.5deg);
+  }
+  /* --- HEAVY PUSH-OFF & RECOIL --- */
+  62% {
+    transform: rotate(-10deg) translateX(-3px); /* pushed back with force */
+  }
+  /* --- SECOND DEFLECTION PARRY --- */
+  72% {
+    transform: rotate(16deg) translateX(0);    /* intercept counter-attack */
+  }
+  76% {
+    transform: rotate(14deg);                   /* deflect and slide */
+  }
+  86% {
+    transform: rotate(-4deg);                   /* recover balance */
+  }
+  100% {
+    transform: rotate(-12deg);                  /* back to guard */
+  }
+}
+
+/* Right Sword Choreography:
+   0-24%: Defensive vigilance in high guard
+   24-33%: Sweeping upward parry to catch the cleave
+   33-54%: BLADE LOCK! Pushing against the left sword with raw strength
+   54-66%: Shoves the opponent off and resets
+   66-76%: Counter-thrust attack
+   76-88%: Slides past and circles back
+   88-100%: Returns to high guard
+*/
+@keyframes swordMartialFightRight {
+  0% {
+    transform: rotate(12deg);
+  }
+  14% {
+    transform: rotate(15deg) translateY(1px); /* slow stance adjustment */
+  }
+  24% {
+    transform: rotate(10deg);                 /* prepares intercept */
+  }
+  33% {
+    transform: rotate(-20deg) translateX(-1px); /* HEAVY IMPACT PARRY */
+  }
+  /* --- LOCKED BLADES TENSION STRUGGLE --- */
+  36% {
+    transform: rotate(-19deg) translate(-0.6px, 0.4px);
+  }
+  40% {
+    transform: rotate(-20.5deg) translate(0.4px, -0.4px);
+  }
+  44% {
+    transform: rotate(-19.2deg) translate(-0.4px, 0.2px);
+  }
+  48% {
+    transform: rotate(-20deg) translate(0.3px, -0.3px);
+  }
+  53% {
+    transform: rotate(-19.5deg);
+  }
+  /* --- POWER PUSH-OFF --- */
+  62% {
+    transform: rotate(10deg) translateX(3px);   /* pushes off opponent */
+  }
+  /* --- COUNTER-ATTACK --- */
+  72% {
+    transform: rotate(-16deg) translateX(0);    /* retaliatory strike */
+  }
+  76% {
+    transform: rotate(-14deg);                  /* slide across edge */
+  }
+  86% {
+    transform: rotate(4deg);                    /* recover balance */
+  }
+  100% {
+    transform: rotate(12deg);                   /* back to guard */
+  }
+}
+
+/* Clash Sparks & Shockwave Choreography:
+   Erupts upon blade impact (33%), flickers during blade lock,
+   flashes on counter-strike (72%), and rests during standoff.
+*/
+@keyframes swordMartialSparks {
+  0%, 30% {
+    opacity: 0;
+    transform: scale(0.15) rotate(0deg);
+  }
+  /* Explosive First Impact Flash */
+  33% {
+    opacity: 1;
+    transform: scale(1.4) rotate(18deg);
+  }
+  35% {
+    opacity: 0.9;
+    transform: scale(1.15) rotate(24deg);
+  }
+  /* Grinding Steel Sparks During Blade Lock */
+  40% {
+    opacity: 0.45;
+    transform: scale(0.7) rotate(32deg);
+  }
+  45% {
+    opacity: 0.75;
+    transform: scale(0.9) rotate(40deg);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.6) rotate(48deg);
+  }
+  54% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  68% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  /* Second Counter-Clash Spark */
+  72% {
+    opacity: 1;
+    transform: scale(1.2) rotate(-18deg);
+  }
+  76% {
+    opacity: 0.4;
+    transform: scale(0.75) rotate(-28deg);
+  }
+  82%, 100% {
+    opacity: 0;
+    transform: scale(0.15);
+  }
+}
+
 .brand-avatar {
   display: flex;
   align-items: center;
