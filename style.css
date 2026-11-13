@@ -1,18 +1,18 @@
 /* ==========================================================================
-   SAMARTH SINGH PORTFOLIO - BRIGHT ROYAL RAJPUT THEME
-   Modern, Radiant, Colorful, Dynamic & Animated
+   SAMARTH SINGH PORTFOLIO - ROYAL RAJASTHANI PALACE THEME
+   Bright, Radiant, Elegant, Colorful, Dynamic & Animated
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   Default Bright Theme Variables (Bright Royal Rajput Mode)
+   Default Bright Theme Variables (Royal Sandstone & Marble Mode)
    -------------------------------------------------------------------------- */
 :root {
   /* Surfaces & Backgrounds */
-  --bg-body: #f8fafc;
+  --bg-body: #fdfbf7;
   --bg-card: #ffffff;
   --bg-card-hover: #ffffff;
   --bg-sheet: #ffffff;
-  --bg-nav: rgba(255, 255, 255, 0.92);
+  --bg-nav: rgba(253, 251, 247, 0.94);
 
   /* Typography Colors */
   --text-main: #0f172a;
@@ -21,37 +21,37 @@
   --text-dark: #020617;
 
   /* Borders & Dividers */
-  --border-light: #e2e8f0;
-  --border-hover: #cbd5e1;
-  --border-subtle: #f1f5f9;
+  --border-light: #f1e9db;
+  --border-hover: #e2d4bd;
+  --border-subtle: #faf5ed;
 
-  /* Royal Rajput & Accent Colors */
-  --royal-saffron: #ea580c;
-  --royal-gold: #d97706;
+  /* Royal Rajasthani Signature Palette */
+  --royal-kesariya: #ea580c;       /* Authentic Kesariya Saffron */
+  --royal-gold: #d97706;           /* Jaisalmer Gold Sandstone */
   --royal-gold-light: #f59e0b;
-  --royal-maroon: #991b1b;
-  --royal-blue: #2563eb;
-  --royal-emerald: #059669;
-  --royal-purple: #7c3aed;
-  --royal-coral: #f97316;
+  --royal-jaipur: #be185d;         /* Jaipur Royal Pink / Rose */
+  --royal-jodhpur: #1d4ed8;        /* Jodhpur Fort Indigo */
+  --royal-emerald: #059669;        /* Royal Emerald */
+  --royal-crimson: #991b1b;
 
   /* Gradients */
-  --grad-hero: linear-gradient(135deg, #b45309 0%, #ea580c 50%, #2563eb 100%);
-  --grad-saffron: linear-gradient(135deg, #ea580c 0%, #d97706 100%);
-  --grad-rajput: linear-gradient(135deg, #fff7ed 0%, #fef3c7 100%);
-  --grad-purple: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+  --grad-hero: linear-gradient(135deg, #b45309 0%, #ea580c 45%, #1d4ed8 100%);
+  --grad-kesariya: linear-gradient(135deg, #ea580c 0%, #d97706 100%);
+  --grad-royal-gold: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
+  --grad-jaipur: linear-gradient(135deg, #be185d 0%, #e11d48 100%);
+  --grad-jodhpur: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
   --grad-emerald: linear-gradient(135deg, #059669 0%, #10b981 100%);
-  --grad-coral: linear-gradient(135deg, #ea580c 0%, #ef4444 100%);
+  --grad-warm-card: linear-gradient(135deg, #fffbf5 0%, #fff7ed 100%);
 
   /* Fonts */
   --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   /* Shadows */
-  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.07), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
-  --shadow-lg: 0 20px 35px -10px rgba(15, 23, 42, 0.12), 0 0 25px rgba(245, 158, 11, 0.12);
-  --shadow-gold: 0 6px 20px rgba(217, 119, 6, 0.25);
+  --shadow-sm: 0 4px 12px rgba(180, 83, 9, 0.04);
+  --shadow-md: 0 10px 25px -5px rgba(180, 83, 9, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 20px 35px -10px rgba(180, 83, 9, 0.12), 0 0 25px rgba(245, 158, 11, 0.10);
+  --shadow-gold: 0 6px 20px rgba(217, 119, 6, 0.28);
 
   /* Spacers */
   --gap-xs: 6px;
@@ -69,22 +69,22 @@
 }
 
 /* --------------------------------------------------------------------------
-   Dark Mode Variables (Available via Toggle)
+   Royal Night Mode (Available via Toggle)
    -------------------------------------------------------------------------- */
 [data-theme="dark"] {
-  --bg-body: #0a0e17;
-  --bg-card: rgba(18, 24, 38, 0.9);
-  --bg-card-hover: rgba(26, 34, 52, 0.98);
+  --bg-body: #0d111c;
+  --bg-card: rgba(20, 27, 45, 0.92);
+  --bg-card-hover: rgba(28, 38, 62, 0.98);
   --bg-sheet: #ffffff;
-  --bg-nav: rgba(10, 14, 23, 0.88);
+  --bg-nav: rgba(13, 17, 28, 0.92);
 
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --text-light: #64748b;
   --text-dark: #0f172a;
 
-  --border-light: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.2);
+  --border-light: rgba(217, 119, 6, 0.15);
+  --border-hover: rgba(217, 119, 6, 0.35);
   --border-subtle: rgba(255, 255, 255, 0.04);
 
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -131,30 +131,46 @@ p {
 }
 
 a {
-  color: var(--royal-blue);
+  color: var(--royal-jodhpur);
   text-decoration: none;
   transition: all 0.25s ease;
 }
 
 a:hover {
-  color: var(--royal-saffron);
+  color: var(--royal-kesariya);
 }
 
-/* Ambient Radiant Glow Blooms */
+/* Decorative Rajasthani Jaali Lattice Overlay */
+.rajasthani-jaali-pattern {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.028;
+  background-image: radial-gradient(#d97706 1px, transparent 1px), radial-gradient(#ea580c 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+[data-theme="dark"] .rajasthani-jaali-pattern {
+  opacity: 0.04;
+}
+
+/* Radiant Ambient Glow Blooms */
 .glow-bg {
   position: absolute;
   border-radius: 50%;
   filter: blur(120px);
   pointer-events: none;
   z-index: 0;
-  opacity: 0.65;
+  opacity: 0.55;
   animation: floatBlooms 18s ease-in-out infinite alternate;
 }
 
 .glow-bg-1 {
   width: 550px;
   height: 550px;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.16) 0%, transparent 70%);
   top: -100px;
   right: -50px;
 }
@@ -162,7 +178,7 @@ a:hover {
 .glow-bg-2 {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.10) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.14) 0%, transparent 70%);
   top: 850px;
   left: -120px;
   animation-delay: -5s;
@@ -171,7 +187,7 @@ a:hover {
 .glow-bg-3 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(234, 88, 12, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(29, 78, 216, 0.10) 0%, transparent 70%);
   top: 1750px;
   right: -80px;
   animation-delay: -10s;
@@ -194,7 +210,7 @@ a:hover {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-light);
-  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.03);
+  box-shadow: 0 2px 12px rgba(180, 83, 9, 0.04);
   transition: all 0.3s ease;
 }
 
@@ -222,12 +238,13 @@ a:hover {
   width: 42px;
   height: 42px;
   border-radius: var(--radius-sm);
-  background: var(--grad-saffron);
+  background: var(--grad-kesariya);
   color: #ffffff;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.15rem;
   box-shadow: var(--shadow-gold);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
   transition: transform 0.3s ease;
 }
 
@@ -240,36 +257,12 @@ a:hover {
   flex-direction: column;
 }
 
-.brand-name-wrap {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .brand-name {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.15rem;
   color: var(--text-main);
   letter-spacing: -0.3px;
-}
-
-.rajput-pill {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-  background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);
-  border: 1px solid rgba(234, 88, 12, 0.35);
-  color: #c2410c;
-  font-size: 0.7rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-[data-theme="dark"] .rajput-pill {
-  background: rgba(234, 88, 12, 0.2);
-  color: #fdba74;
 }
 
 .brand-tag {
@@ -354,7 +347,7 @@ a:hover {
 }
 
 .button-primary {
-  background: var(--grad-saffron);
+  background: var(--grad-kesariya);
   color: #ffffff !important;
   box-shadow: var(--shadow-gold);
 }
@@ -385,9 +378,9 @@ a:hover {
 }
 
 .button-ghost:hover {
-  color: var(--royal-blue);
-  border-color: var(--royal-blue);
-  background: rgba(37, 99, 235, 0.05);
+  color: var(--royal-jodhpur);
+  border-color: var(--royal-jodhpur);
+  background: rgba(29, 78, 216, 0.05);
   transform: translateY(-2px);
 }
 
@@ -396,11 +389,11 @@ a:hover {
   font-size: 0.875rem;
   background: rgba(234, 88, 12, 0.1);
   border: 1px solid rgba(234, 88, 12, 0.3);
-  color: var(--royal-saffron);
+  color: var(--royal-kesariya);
 }
 
 .button-nav:hover {
-  background: var(--royal-saffron);
+  background: var(--royal-kesariya);
   color: #ffffff;
   box-shadow: var(--shadow-gold);
 }
@@ -447,6 +440,15 @@ section {
 .section-header h2 {
   font-size: clamp(2rem, 4vw, 2.75rem);
   letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.section-ornament {
+  color: var(--royal-gold);
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  opacity: 0.85;
 }
 
 .section-desc {
@@ -468,14 +470,13 @@ section {
   margin: 0 auto;
 }
 
-/* Rajput Hero Badge */
-.hero-badge.badge-rajput {
+.hero-badge.badge-rajasthani {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 8px 20px;
   border-radius: var(--radius-full);
-  background: var(--grad-rajput);
+  background: linear-gradient(135deg, #fffbf5 0%, #fef3c7 100%);
   border: 1.5px solid rgba(217, 119, 6, 0.4);
   color: #7c2d12;
   font-size: 0.875rem;
@@ -484,15 +485,15 @@ section {
   box-shadow: 0 4px 16px rgba(217, 119, 6, 0.12);
 }
 
-[data-theme="dark"] .hero-badge.badge-rajput {
+[data-theme="dark"] .hero-badge.badge-rajasthani {
   background: rgba(234, 88, 12, 0.15);
   border-color: rgba(234, 88, 12, 0.4);
   color: #fed7aa;
 }
 
-.rajput-sun {
+.royal-sun-icon {
   font-size: 1.1rem;
-  animation: rotateSun 12s linear infinite;
+  animation: rotateSun 14s linear infinite;
   display: inline-block;
 }
 
@@ -520,23 +521,30 @@ section {
   font-size: clamp(2.8rem, 7vw, 4.5rem);
   font-weight: 800;
   letter-spacing: -1.5px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: var(--text-main);
+}
+
+/* Royal Ornamental Flourish Divider */
+.royal-divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 12px;
+  margin: 0 auto 20px;
+  max-width: 240px;
 }
 
-.rajput-royal-crest {
-  font-size: 0.65em;
-  display: inline-block;
-  filter: drop-shadow(0 2px 6px rgba(217, 119, 6, 0.4));
-  transition: transform 0.3s ease;
+.divider-line {
+  height: 2px;
+  flex-grow: 1;
+  background: linear-gradient(90deg, transparent, var(--royal-gold), transparent);
 }
 
-.hero-title:hover .rajput-royal-crest {
-  transform: rotate(15deg) scale(1.2);
+.divider-gem {
+  color: var(--royal-kesariya);
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
 /* Full expanded form as strictly requested */
@@ -580,7 +588,7 @@ section {
 }
 
 .stat-card {
-  padding: 22px 18px;
+  padding: 24px 18px 20px;
   background: var(--bg-card);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-light);
@@ -590,8 +598,7 @@ section {
   overflow: hidden;
 }
 
-.stat-card::before {
-  content: '';
+.card-arch-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -599,10 +606,10 @@ section {
   height: 4px;
 }
 
-.stat-cma::before { background: var(--grad-saffron); }
-.stat-iimb::before { background: var(--grad-purple); }
-.stat-ca::before { background: var(--grad-emerald); }
-.stat-sports::before { background: var(--grad-coral); }
+.stat-cma .card-arch-top { background: var(--grad-kesariya); }
+.stat-iimb .card-arch-top { background: var(--grad-jaipur); }
+.stat-ca .card-arch-top { background: var(--grad-emerald); }
+.stat-sports .card-arch-top { background: var(--grad-jodhpur); }
 
 .stat-card:hover {
   transform: translateY(-6px);
@@ -646,10 +653,10 @@ section {
   width: 4px;
   background: linear-gradient(180deg, 
     var(--royal-gold) 0%, 
-    var(--royal-blue) 25%, 
+    var(--royal-jodhpur) 25%, 
     var(--royal-emerald) 50%, 
-    var(--royal-purple) 75%,
-    var(--royal-saffron) 100%);
+    var(--royal-jaipur) 75%,
+    var(--royal-kesariya) 100%);
   border-radius: var(--radius-full);
   opacity: 0.75;
 }
@@ -693,9 +700,9 @@ section {
 }
 
 .cycle-cma .marker-pulse { border-color: rgba(217, 119, 6, 0.4); }
-.cycle-ca .marker-pulse { border-color: rgba(37, 99, 235, 0.4); }
+.cycle-ca .marker-pulse { border-color: rgba(29, 78, 216, 0.4); }
 .cycle-olympiad .marker-pulse { border-color: rgba(5, 150, 105, 0.4); }
-.cycle-twelfth .marker-pulse { border-color: rgba(124, 58, 237, 0.4); }
+.cycle-twelfth .marker-pulse { border-color: rgba(190, 24, 93, 0.4); }
 .cycle-tenth .marker-pulse { border-color: rgba(234, 88, 12, 0.4); }
 
 @keyframes markerGlow {
@@ -741,14 +748,14 @@ section {
 }
 
 .badge-cma { background: rgba(217, 119, 6, 0.12); color: #b45309; border: 1px solid rgba(217, 119, 6, 0.3); }
-.badge-ca { background: rgba(37, 99, 235, 0.12); color: #1d4ed8; border: 1px solid rgba(37, 99, 235, 0.3); }
+.badge-ca { background: rgba(29, 78, 216, 0.12); color: #1d4ed8; border: 1px solid rgba(29, 78, 216, 0.3); }
 .badge-olympiad { background: rgba(5, 150, 105, 0.12); color: #047857; border: 1px solid rgba(5, 150, 105, 0.3); }
-.badge-school { background: rgba(124, 58, 237, 0.12); color: #6d28d9; border: 1px solid rgba(124, 58, 237, 0.3); }
+.badge-school { background: rgba(190, 24, 93, 0.12); color: #be185d; border: 1px solid rgba(190, 24, 93, 0.3); }
 
 [data-theme="dark"] .badge-cma { color: #fbbf24; }
 [data-theme="dark"] .badge-ca { color: #60a5fa; }
 [data-theme="dark"] .badge-olympiad { color: #34d399; }
-[data-theme="dark"] .badge-school { color: #c084fc; }
+[data-theme="dark"] .badge-school { color: #f472b6; }
 
 .cycle-status {
   font-size: 0.85rem;
@@ -757,7 +764,7 @@ section {
 
 .status-cleared { color: var(--royal-emerald); }
 .status-gold { color: var(--royal-gold); }
-.status-percent { color: var(--royal-blue); }
+.status-percent { color: var(--royal-jodhpur); }
 
 .cycle-card h3 {
   font-size: 1.45rem;
@@ -766,7 +773,7 @@ section {
 
 .cycle-institution {
   font-size: 0.938rem;
-  color: var(--royal-blue);
+  color: var(--royal-jodhpur);
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -779,7 +786,7 @@ section {
 }
 
 /* ==========================================================================
-   Qualifications Table (Crisp, High Contrast, Modern)
+   Qualifications Table (Clean Palace Marble Aesthetic)
    ========================================================================== */
 .table-container {
   background: var(--bg-card);
@@ -798,7 +805,7 @@ section {
 }
 
 .styled-table thead {
-  background: rgba(15, 23, 42, 0.04);
+  background: rgba(217, 119, 6, 0.05);
   border-bottom: 1.5px solid var(--border-light);
 }
 
@@ -828,7 +835,7 @@ section {
 }
 
 .styled-table tbody tr:hover {
-  background: rgba(217, 119, 6, 0.04);
+  background: rgba(234, 88, 12, 0.04);
 }
 
 .styled-table tbody tr:last-child td {
@@ -847,10 +854,10 @@ section {
 }
 
 .icon-cma { color: #d97706; }
-.icon-ca { color: #2563eb; }
+.icon-ca { color: #1d4ed8; }
 .icon-gold { color: #d97706; }
 .icon-blue { color: #0284c7; }
-.icon-iimb { color: #7c3aed; }
+.icon-iimb { color: #be185d; }
 
 .table-badge {
   display: inline-block;
@@ -879,18 +886,18 @@ section {
 }
 
 .badge-purple {
-  background: rgba(124, 58, 237, 0.12);
-  color: #6d28d9;
-  border: 1px solid rgba(124, 58, 237, 0.3);
+  background: rgba(190, 24, 93, 0.12);
+  color: #9d174d;
+  border: 1px solid rgba(190, 24, 93, 0.3);
 }
 
 [data-theme="dark"] .badge-success { color: #34d399; }
 [data-theme="dark"] .badge-gold { color: #fbbf24; }
 [data-theme="dark"] .badge-info { color: #38bdf8; }
-[data-theme="dark"] .badge-purple { color: #c084fc; }
+[data-theme="dark"] .badge-purple { color: #f472b6; }
 
 /* ==========================================================================
-   Highlights Section: 5 Vibrant Columns / Cards
+   Highlights Section: 5 Distinct Pillars
    ========================================================================== */
 .columns-grid {
   display: grid;
@@ -926,11 +933,11 @@ section {
   height: 4px;
 }
 
-.col-icai .column-accent-bar { background: var(--royal-blue); }
+.col-icai .column-accent-bar { background: var(--royal-jodhpur); }
 .col-icmai .column-accent-bar { background: var(--royal-emerald); }
-.col-iimb .column-accent-bar { background: var(--royal-purple); }
+.col-iimb .column-accent-bar { background: var(--royal-jaipur); }
 .col-cert .column-accent-bar { background: var(--royal-gold); }
-.col-sports .column-accent-bar { background: var(--royal-saffron); }
+.col-sports .column-accent-bar { background: var(--royal-kesariya); }
 
 .column-header {
   display: flex;
@@ -949,9 +956,9 @@ section {
   flex-shrink: 0;
 }
 
-.icon-blue { background: rgba(37, 99, 235, 0.12); color: #2563eb; }
+.icon-blue { background: rgba(29, 78, 216, 0.12); color: #1d4ed8; }
 .icon-emerald { background: rgba(5, 150, 105, 0.12); color: #059669; }
-.icon-purple { background: rgba(124, 58, 237, 0.12); color: #7c3aed; }
+.icon-purple { background: rgba(190, 24, 93, 0.12); color: #be185d; }
 .icon-amber { background: rgba(217, 119, 6, 0.12); color: #d97706; }
 .icon-coral { background: rgba(234, 88, 12, 0.12); color: #ea580c; }
 
@@ -977,7 +984,7 @@ section {
 }
 
 .highlight-item-box {
-  background: rgba(15, 23, 42, 0.02);
+  background: rgba(217, 119, 6, 0.03);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
   padding: 16px;
@@ -1000,9 +1007,9 @@ section {
   margin-bottom: 8px;
 }
 
-.tag-blue { color: #2563eb; }
+.tag-blue { color: #1d4ed8; }
 .tag-emerald { color: #059669; }
-.tag-purple { color: #7c3aed; }
+.tag-purple { color: #be185d; }
 .tag-amber { color: #d97706; }
 .tag-coral { color: #ea580c; }
 
@@ -1052,7 +1059,7 @@ section {
 
 /* Certificate Cards in Column 4 */
 .cert-card {
-  background: rgba(15, 23, 42, 0.02);
+  background: rgba(217, 119, 6, 0.02);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
   padding: 14px;
@@ -1076,8 +1083,8 @@ section {
 }
 
 .pill-pwc { background: rgba(239, 68, 68, 0.12); color: #dc2626; border: 1px solid rgba(239, 68, 68, 0.3); }
-.pill-jpmorgan { background: rgba(37, 99, 235, 0.12); color: #2563eb; border: 1px solid rgba(37, 99, 235, 0.3); }
-.pill-accenture { background: rgba(124, 58, 237, 0.12); color: #7c3aed; border: 1px solid rgba(124, 58, 237, 0.3); }
+.pill-jpmorgan { background: rgba(29, 78, 216, 0.12); color: #1d4ed8; border: 1px solid rgba(29, 78, 216, 0.3); }
+.pill-accenture { background: rgba(190, 24, 93, 0.12); color: #be185d; border: 1px solid rgba(190, 24, 93, 0.3); }
 
 .cert-title {
   font-size: 1rem;
@@ -1104,7 +1111,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
-  background: rgba(15, 23, 42, 0.02);
+  background: rgba(217, 119, 6, 0.02);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
   transition: transform 0.2s ease;
@@ -1154,7 +1161,7 @@ section {
   margin-top: auto;
   padding: 18px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, #fff7ed 0%, #fef3c7 100%);
+  background: linear-gradient(135deg, #fffbf5 0%, #fef3c7 100%);
   border: 1.5px solid rgba(234, 88, 12, 0.35);
   position: relative;
 }
@@ -1207,31 +1214,18 @@ section {
   line-height: 1.6;
 }
 
-.sheet-title-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 6px;
+.sheet-top {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .sheet-name {
   font-size: 2.25rem;
   font-weight: 800;
   letter-spacing: -0.5px;
-  margin: 0;
+  margin: 0 0 6px;
   color: #0f172a;
-}
-
-.sheet-rajput-tag {
-  display: inline-block;
-  padding: 2px 10px;
-  border-radius: var(--radius-full);
-  background: #fef3c7;
-  color: #b45309;
-  border: 1px solid #fde68a;
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
 }
 
 .sheet-contact {
@@ -1241,7 +1235,7 @@ section {
 }
 
 .sheet-contact a {
-  color: var(--royal-blue);
+  color: var(--royal-jodhpur);
   font-weight: 700;
 }
 
@@ -1316,14 +1310,14 @@ section {
   right: -50px;
   width: 250px;
   height: 250px;
-  background: radial-gradient(circle, rgba(217, 119, 6, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.15) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
 
 .contact-card h2 {
   font-size: clamp(2rem, 4vw, 2.75rem);
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .contact-text {
@@ -1379,7 +1373,7 @@ section {
 }
 
 .footer-links a:hover {
-  color: var(--royal-saffron);
+  color: var(--royal-kesariya);
 }
 
 /* ==========================================================================
@@ -1490,7 +1484,7 @@ section {
     color: #000000;
   }
 
-  header, #hero, #academic-cycle, #academic-table, #highlights, #contact, .footer, .resume-intro, .glow-bg {
+  header, #hero, #academic-cycle, #academic-table, #highlights, #contact, .footer, .resume-intro, .glow-bg, .rajasthani-jaali-pattern {
     display: none !important;
   }
 
