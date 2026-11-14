@@ -1,699 +1,389 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="bright">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Samarth Singh | Aspiring CA & CMA | IIMB BBA DBE</title>
+  <title>Samarth Singh | IIMB BBA DBE, Aspiring CA & CMA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="theme-bright">
+<body>
 
-  <!-- Background decorative Rajasthani ambient blooms & royal sandstone warmth -->
-  <div class="glow-bg glow-bg-1" aria-hidden="true"></div>
-  <div class="glow-bg glow-bg-2" aria-hidden="true"></div>
-  <div class="glow-bg glow-bg-3" aria-hidden="true"></div>
-
-  <!-- Decorative Rajasthani Jaali Lattice Overlay (Subtle) -->
-  <div class="rajasthani-jaali-pattern" aria-hidden="true"></div>
-
-  <!-- Sticky Top Navigation -->
+  <!-- Navigation -->
   <header class="topbar">
     <nav class="nav">
       <a class="brand" href="#hero">
-        <!-- Two Heavy Curved Talwars Clashing in Slow Cinematic Duel -->
-        <div class="swords-avatar-wrap" title="Dueling Warriors' Talwars">
-          <svg class="clashing-swords-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <!-- Damascus Steel Blade Left Gradient -->
-              <linearGradient id="bladeLeftGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#334155"/>
-                <stop offset="35%" stop-color="#94a3b8"/>
-                <stop offset="55%" stop-color="#f8fafc"/>
-                <stop offset="85%" stop-color="#cbd5e1"/>
-                <stop offset="100%" stop-color="#64748b"/>
-              </linearGradient>
-
-              <!-- Damascus Steel Blade Right Gradient -->
-              <linearGradient id="bladeRightGrad" x1="100%" y1="100%" x2="0%" y2="0%">
-                <stop offset="0%" stop-color="#334155"/>
-                <stop offset="35%" stop-color="#94a3b8"/>
-                <stop offset="55%" stop-color="#f8fafc"/>
-                <stop offset="85%" stop-color="#cbd5e1"/>
-                <stop offset="100%" stop-color="#64748b"/>
-              </linearGradient>
-
-              <!-- Royal Gold Hilt Gradient -->
-              <linearGradient id="hiltGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#fef08a"/>
-                <stop offset="45%" stop-color="#d97706"/>
-                <stop offset="100%" stop-color="#78350f"/>
-              </linearGradient>
-
-              <!-- Spark Glow Filter -->
-              <filter id="sparkGlow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="2.5" result="blur"/>
-                <feMerge>
-                  <feMergeNode in="blur"/>
-                  <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-              </filter>
-            </defs>
-
-            <!-- LEFT SWORD (Heavy Curved Talwar) -->
-            <g class="sword-left-group">
-              <!-- Curved Steel Blade with Spine and Bevel -->
-              <path d="M26 100 L35 93 L76 34 Q89 16 97 10 Q83 24 61 48 L29 97 Z" fill="url(#bladeLeftGrad)" stroke="#334155" stroke-width="0.9"/>
-              <!-- Razor Cutting Edge Highlight -->
-              <path d="M34 94 L75 36 Q86 21 95 12" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
-              <!-- Fuller / Blood Groove -->
-              <path d="M38 90 L68 44 Q76 32 82 24" stroke="rgba(51, 65, 85, 0.6)" stroke-width="0.8" stroke-linecap="round"/>
-              
-              <!-- Hilt: Crossguard Quillons with Rounded Terminals -->
-              <path d="M19 94 Q29 99 39 88 Q37 84 32 86 Q26 89 22 90 Z" fill="url(#hiltGoldGrad)" stroke="#78350f" stroke-width="0.8"/>
-              
-              <!-- Knuckle Bow Guard (D-shaped handguard) -->
-              <path d="M20 93 Q10 99 12 110 Q14 115 19 113" stroke="url(#hiltGoldGrad)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-              
-              <!-- Grip -->
-              <rect x="17" y="99" width="12" height="5.5" rx="2" transform="rotate(-42 23 102)" fill="#881337" stroke="#4c0519" stroke-width="0.7"/>
-              
-              <!-- Traditional Disc Pommel with Dome Spire -->
-              <circle cx="16" cy="111" r="6" fill="url(#hiltGoldGrad)" stroke="#78350f" stroke-width="0.8"/>
-              <circle cx="16" cy="111" r="2.5" fill="#451a03"/>
-              <path d="M16 111 L14 116" stroke="#78350f" stroke-width="1.2" stroke-linecap="round"/>
-            </g>
-
-            <!-- RIGHT SWORD (Heavy Curved Talwar) -->
-            <g class="sword-right-group">
-              <!-- Curved Steel Blade with Spine and Bevel -->
-              <path d="M94 100 L85 93 L44 34 Q31 16 23 10 Q37 24 59 48 L91 97 Z" fill="url(#bladeRightGrad)" stroke="#334155" stroke-width="0.9"/>
-              <!-- Razor Cutting Edge Highlight -->
-              <path d="M86 94 L45 36 Q34 21 25 12" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
-              <!-- Fuller / Blood Groove -->
-              <path d="M82 90 L52 44 Q44 32 38 24" stroke="rgba(51, 65, 85, 0.6)" stroke-width="0.8" stroke-linecap="round"/>
-              
-              <!-- Hilt: Crossguard Quillons with Rounded Terminals -->
-              <path d="M101 94 Q91 99 81 88 Q83 84 88 86 Q94 89 98 90 Z" fill="url(#hiltGoldGrad)" stroke="#78350f" stroke-width="0.8"/>
-              
-              <!-- Knuckle Bow Guard (D-shaped handguard) -->
-              <path d="M100 93 Q110 99 108 110 Q106 115 101 113" stroke="url(#hiltGoldGrad)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-              
-              <!-- Grip -->
-              <rect x="91" y="99" width="12" height="5.5" rx="2" transform="rotate(42 97 102)" fill="#881337" stroke="#4c0519" stroke-width="0.7"/>
-              
-              <!-- Traditional Disc Pommel with Dome Spire -->
-              <circle cx="104" cy="111" r="6" fill="url(#hiltGoldGrad)" stroke="#78350f" stroke-width="0.8"/>
-              <circle cx="104" cy="111" r="2.5" fill="#451a03"/>
-              <path d="M104 111 L106 116" stroke="#78350f" stroke-width="1.2" stroke-linecap="round"/>
-            </g>
-
-            <!-- CLASH IMPACT & BURSTING SPARKS -->
-            <g class="clash-effects" filter="url(#sparkGlow)">
-              <!-- Shockwave Flash Ring -->
-              <circle class="clash-ring" cx="60" cy="40" r="14" stroke="#fef08a" stroke-width="1.5" fill="none"/>
-              
-              <!-- Intense Core Flash -->
-              <circle class="clash-core" cx="60" cy="40" r="6" fill="#ffffff"/>
-              
-              <!-- Sharp Burst Sparks -->
-              <path class="clash-burst" d="M60 20 L62 34 L78 30 L65 40 L78 50 L63 45 L60 60 L57 45 L42 50 L55 40 L42 30 L58 34 Z" fill="#fde047"/>
-              
-              <!-- Flying Steel Embers -->
-              <circle class="ember ember-1" cx="68" cy="28" r="1.8" fill="#f97316"/>
-              <circle class="ember ember-2" cx="50" cy="24" r="1.5" fill="#ef4444"/>
-              <circle class="ember ember-3" cx="74" cy="46" r="1.6" fill="#fbbf24"/>
-              <circle class="ember ember-4" cx="46" cy="48" r="1.4" fill="#f59e0b"/>
-            </g>
-          </svg>
-        </div>
+        <span class="brand-monogram">SS</span>
         <div class="brand-text">
           <span class="brand-name">Samarth Singh</span>
-          <span class="brand-tag">IIMB BBA DBE</span>
+          <span class="brand-subtitle">IIMB BBA DBE</span>
         </div>
       </a>
 
       <ul class="nav-links">
-        <li><a class="nav-link" href="#academic-cycle">Academic Cycle</a></li>
-        <li><a class="nav-link" href="#academic-table">Qualifications</a></li>
+        <li><a class="nav-link" href="#journey">Education &amp; Qualifications</a></li>
         <li><a class="nav-link" href="#highlights">Highlights</a></li>
         <li><a class="nav-link" href="#resume">Resume</a></li>
       </ul>
 
-      <div class="nav-actions">
-        <!-- Bright / Royal Night Theme Switcher -->
-        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Bright/Dark theme" title="Toggle Theme">
-          <span class="theme-icon">☀️</span>
-          <span class="theme-label">Bright</span>
-        </button>
-        <a class="button button-nav" href="#contact">Get in Touch</a>
-      </div>
+      <a class="button button-nav" href="mailto:samarthsingh206@gmail.com">Get in Touch</a>
     </nav>
   </header>
 
   <main>
     <!-- Hero Section -->
     <section id="hero">
-      <div class="hero-content">
-
-        <!-- Royal Rajasthani Sun Badge -->
-        <div class="hero-badge badge-rajasthani animate-fade">
-          <span class="royal-sun-icon">☀️</span>
-          <span class="badge-accent-text">Academic &amp; Leadership Portfolio</span>
-          <span class="badge-sep">•</span>
-          <span>IIMB BBA DBE</span>
+      <div class="hero-container">
+        <div class="hero-status">
+          <span class="status-indicator"></span>
+          <span>IIM Bangalore &bull; BBA DBE (1st Year)</span>
         </div>
 
-        <h1 class="hero-title animate-fade">Samarth Singh</h1>
+        <h1 class="hero-name">Samarth Singh</h1>
 
-        <!-- Royal Ornamental Flourish -->
-        <div class="royal-divider animate-fade">
-          <span class="divider-line"></span>
-          <span class="divider-gem">❖</span>
-          <span class="divider-line"></span>
-        </div>
-
-        <!-- Subtitle: Full expanded form as strictly requested -->
-        <h2 class="hero-subtitle animate-fade">
+        <!-- Full expanded title below name as strictly requested -->
+        <h2 class="hero-role">
           Aspiring Chartered Accountant and Cost and Management Accountant
         </h2>
 
-        <!-- Intro: Exact requested copy -->
-        <p class="hero-intro animate-fade">
+        <!-- Exact intro copy -->
+        <p class="hero-intro">
           I am the first year student of IIMB BBA DBE.
         </p>
 
-        <!-- Action CTAs -->
-        <div class="hero-actions animate-fade">
-          <a class="button button-primary" href="#academic-cycle">
-            <span>Explore Academic Cycle</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-          <a class="button button-outline" href="#highlights">View Highlights</a>
-          <a class="button button-ghost" href="#contact">Connect with Me</a>
+        <!-- Clean Actions -->
+        <div class="hero-cta-group">
+          <a class="button button-primary" href="#journey">View Education &amp; Qualifications</a>
+          <a class="button button-secondary" href="#resume">Download Resume</a>
+          <a class="button button-ghost" href="mailto:samarthsingh206@gmail.com">Email Me</a>
         </div>
 
-        <!-- Metric Counter Cards with Rajasthani Royal Trims -->
-        <div class="stats-grid animate-fade">
-          <div class="stat-card stat-cma">
-            <div class="card-arch-top"></div>
-            <div class="stat-number">AIR 30</div>
-            <div class="stat-label">National Youth Commerce Olympiad (ICMAI)</div>
+        <!-- Key Metrics (Clean & Understated) -->
+        <div class="metrics-row">
+          <div class="metric-item">
+            <span class="metric-val">AIR 30</span>
+            <span class="metric-desc">Commerce Olympiad (ICMAI 2024)</span>
           </div>
-          <div class="stat-card stat-iimb">
-            <div class="card-arch-top"></div>
-            <div class="stat-number">1,000+</div>
-            <div class="stat-label">IIMB BBA DBE Community Peers Managed</div>
+          <div class="metric-item">
+            <span class="metric-val">1,000+</span>
+            <span class="metric-desc">Peers in IIMB Student Community</span>
           </div>
-          <div class="stat-card stat-ca">
-            <div class="card-arch-top"></div>
-            <div class="stat-number">1st Attempt</div>
-            <div class="stat-label">CMA & CA Foundation Cleared</div>
+          <div class="metric-item">
+            <span class="metric-val">1st Attempt</span>
+            <span class="metric-desc">CA &amp; CMA Foundation Cleared</span>
           </div>
-          <div class="stat-card stat-sports">
-            <div class="card-arch-top"></div>
-            <div class="stat-number">3x Podiums</div>
-            <div class="stat-label">National Table Tennis (Delhi SGFI)</div>
+          <div class="metric-item">
+            <span class="metric-val">3x Podiums</span>
+            <span class="metric-desc">Delhi SGFI Table Tennis Nationals</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Academic Cycle Section -->
-    <section id="academic-cycle">
-      <div class="section-header">
-        <div class="section-tag">Continuous Progression</div>
-        <h2>Academic Cycle</h2>
-        <div class="section-ornament">✦ ═ ☀️ ═ ✦</div>
-        <p class="section-desc">A structured chronicle of foundational accounting certifications, national honours, and scholastic performance.</p>
+    <!-- Education & Qualifications Section (Tabular Format Directly Below Intro) -->
+    <section id="journey">
+      <div class="section-title-wrap">
+        <h2>Education &amp; Qualifications</h2>
+        <p class="section-lead">Foundational accounting examinations, national rank, and academic record.</p>
       </div>
 
-      <div class="cycle-timeline">
-        <!-- 1. CMA Foundation First Attempt -->
-        <div class="cycle-item cycle-cma">
-          <div class="cycle-marker">
-            <span class="marker-pulse"></span>
-            <span class="marker-number">01</span>
-          </div>
-          <div class="cycle-card">
-            <div class="cycle-card-header">
-              <span class="badge badge-cma">Cost and Management Accountant</span>
-              <span class="cycle-status status-cleared">1st Attempt Cleared</span>
-            </div>
-            <h3>CMA Foundation</h3>
-            <p class="cycle-institution">The Institute of Cost Accountants of India (ICMAI)</p>
-            <p class="cycle-detail">Cleared on the very first attempt with rigorous preparation in financial accounting, cost principles, business laws, and economics.</p>
-          </div>
-        </div>
-
-        <!-- 2. CA Foundation -->
-        <div class="cycle-item cycle-ca">
-          <div class="cycle-marker">
-            <span class="marker-pulse"></span>
-            <span class="marker-number">02</span>
-          </div>
-          <div class="cycle-card">
-            <div class="cycle-card-header">
-              <span class="badge badge-ca">Chartered Accountant</span>
-              <span class="cycle-status status-cleared">1st Attempt Cleared</span>
-            </div>
-            <h3>CA Foundation</h3>
-            <p class="cycle-institution">The Institute of Chartered Accountants of India (ICAI)</p>
-            <p class="cycle-detail">Cleared on the first attempt, demonstrating strong competence in accounting principles, mercantile law, quantitative aptitude, and business mathematics.</p>
-          </div>
-        </div>
-
-        <!-- 3. National Youth Commerce Olympiad AIR 30 (ICMAI) 2024 -->
-        <div class="cycle-item cycle-olympiad">
-          <div class="cycle-marker">
-            <span class="marker-pulse"></span>
-            <span class="marker-number">03</span>
-          </div>
-          <div class="cycle-card">
-            <div class="cycle-card-header">
-              <span class="badge badge-olympiad">National Recognition</span>
-              <span class="cycle-status status-gold">AIR 30 • 2024</span>
-            </div>
-            <h3>National Youth Commerce Olympiad</h3>
-            <p class="cycle-institution">Conducted by The Institute of Cost Accountants of India (ICMAI)</p>
-            <p class="cycle-detail">Secured All India Rank 30 in a nationwide competitive examination evaluating high-level commerce mastery, corporate logic, and financial reasoning.</p>
-          </div>
-        </div>
-
-        <!-- 4. Class 12th 87.2% (Commerce with Maths) -->
-        <div class="cycle-item cycle-twelfth">
-          <div class="cycle-marker">
-            <span class="marker-pulse"></span>
-            <span class="marker-number">04</span>
-          </div>
-          <div class="cycle-card">
-            <div class="cycle-card-header">
-              <span class="badge badge-school">Higher Secondary</span>
-              <span class="cycle-status status-percent">Score: 87.2%</span>
-            </div>
-            <h3>Class 12th</h3>
-            <p class="cycle-institution">Commerce with Mathematics</p>
-            <p class="cycle-detail">Achieved 87.2% with a demanding combination of Commerce and Mathematics, building the mathematical and financial backbone for dual accounting qualifications.</p>
-          </div>
-        </div>
-
-        <!-- 5. Class 10th 88.8% -->
-        <div class="cycle-item cycle-tenth">
-          <div class="cycle-marker">
-            <span class="marker-pulse"></span>
-            <span class="marker-number">05</span>
-          </div>
-          <div class="cycle-card">
-            <div class="cycle-card-header">
-              <span class="badge badge-school">Secondary School</span>
-              <span class="cycle-status status-percent">Score: 88.8%</span>
-            </div>
-            <h3>Class 10th</h3>
-            <p class="cycle-institution">Secondary School Examination</p>
-            <p class="cycle-detail">Graduated secondary education with 88.8%, reflecting consistent academic dedication alongside competitive national sports representation.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Academic Table Section -->
-    <section id="academic-table">
-      <div class="section-header">
-        <div class="section-tag">Structured Overview</div>
-        <h2>Academic & Achievement Summary</h2>
-        <div class="section-ornament">✦ ═ ☀️ ═ ✦</div>
-        <p class="section-desc">A comparative overview of examinations, governing institutes, outcomes, and specializations.</p>
-      </div>
-
-      <div class="table-container">
-        <table class="styled-table">
+      <div class="table-card">
+        <table class="academic-table">
           <thead>
             <tr>
               <th>Qualification / Examination</th>
-              <th>Governing Body / Institution</th>
-              <th>Performance & Status</th>
-              <th>Key Discipline / Stream</th>
+              <th>Institute / Board</th>
+              <th>Performance / Status</th>
+              <th>Stream / Discipline</th>
+              <th>Year / Attempt</th>
             </tr>
           </thead>
           <tbody>
             <tr class="row-highlight">
-              <td class="col-title">
-                <span class="table-icon icon-cma">◆</span>
-                <strong>CMA Foundation</strong>
-              </td>
-              <td>Institute of Cost Accountants of India (ICMAI)</td>
-              <td><span class="table-badge badge-success">First Attempt Cleared</span></td>
-              <td>Costing, Management & Financial Accounting</td>
+              <td><strong>CMA Foundation</strong></td>
+              <td>The Institute of Cost Accountants of India (ICMAI)</td>
+              <td><span class="pill-badge pill-green">First Attempt Cleared</span></td>
+              <td>Costing, Management &amp; Financial Accounting</td>
+              <td><span class="table-date">Dec 2025</span></td>
             </tr>
             <tr class="row-highlight">
-              <td class="col-title">
-                <span class="table-icon icon-ca">◆</span>
-                <strong>CA Foundation</strong>
-              </td>
-              <td>Institute of Chartered Accountants of India (ICAI)</td>
-              <td><span class="table-badge badge-success">First Attempt Cleared</span></td>
-              <td>Accounting, Business Law, Quantitative Methods</td>
+              <td><strong>CA Foundation</strong></td>
+              <td>The Institute of Chartered Accountants of India (ICAI)</td>
+              <td><span class="pill-badge pill-green">First Attempt Cleared</span></td>
+              <td>Accounting, Mercantile Law &amp; Quantitative Aptitude</td>
+              <td><span class="table-date">Sep 2025</span></td>
             </tr>
             <tr>
-              <td class="col-title">
-                <span class="table-icon icon-gold">★</span>
-                <strong>National Youth Commerce Olympiad</strong>
-              </td>
+              <td><strong>National Youth Commerce Olympiad</strong></td>
               <td>ICMAI</td>
-              <td><span class="table-badge badge-gold">All India Rank 30 (2024)</span></td>
-              <td>National Commerce, Tax & Economics Assessment</td>
+              <td><span class="pill-badge pill-amber">All India Rank 30 (AIR 30)</span></td>
+              <td>National Commerce, Tax &amp; Economics Examination</td>
+              <td><span class="table-date">2024</span></td>
             </tr>
             <tr>
-              <td class="col-title">
-                <span class="table-icon icon-blue">●</span>
-                <strong>Class 12th Board</strong>
-              </td>
-              <td>Central Board of Secondary Education</td>
-              <td><span class="table-badge badge-info">87.2%</span></td>
+              <td><strong>Class 12th Board</strong></td>
+              <td>Central Board of Secondary Education (CBSE)</td>
+              <td><span class="pill-badge pill-slate">87.2%</span></td>
               <td>Commerce with Mathematics</td>
+              <td><span class="table-date">2025</span></td>
             </tr>
             <tr>
-              <td class="col-title">
-                <span class="table-icon icon-blue">●</span>
-                <strong>Class 10th Board</strong>
-              </td>
-              <td>Central Board of Secondary Education</td>
-              <td><span class="table-badge badge-info">88.8%</span></td>
-              <td>General Scholastic Curriculum</td>
+              <td><strong>Class 10th Board</strong></td>
+              <td>Central Board of Secondary Education (CBSE)</td>
+              <td><span class="pill-badge pill-slate">88.8%</span></td>
+              <td>Secondary School Examination</td>
+              <td><span class="table-date">2023</span></td>
             </tr>
             <tr>
-              <td class="col-title">
-                <span class="table-icon icon-iimb">🎓</span>
-                <strong>BBA in Digital Business & Entrepreneurship</strong>
-              </td>
+              <td><strong>BBA in Digital Business &amp; Entrepreneurship</strong></td>
               <td>Indian Institute of Management Bangalore (IIMB)</td>
-              <td><span class="table-badge badge-purple">1st Year Student</span></td>
-              <td>Digital Business, Technology & Management</td>
+              <td><span class="pill-badge pill-blue">1st Year Student</span></td>
+              <td>Digital Business, Technology &amp; Management</td>
+              <td><span class="table-date">2026 – 2029 (Pursuing)</span></td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- Highlights Section: 5 Styled Columns/Cards -->
+    <!-- Highlights Section (5 Structured Columns) -->
     <section id="highlights">
-      <div class="section-header">
-        <div class="section-tag">Distinct Pillars</div>
-        <h2>Highlights</h2>
-        <div class="section-ornament">✦ ═ ☀️ ═ ✦</div>
-        <p class="section-desc">Key columns representing professional training, university leadership, national rankings, corporate certifications, and sports management.</p>
+      <div class="section-title-wrap">
+        <h2>Key Highlights</h2>
+        <p class="section-lead">Professional training, university leadership, practical simulations, and competitive sports.</p>
       </div>
 
-      <div class="columns-grid">
+      <div class="pillars-grid">
 
         <!-- Column 1: ICAI -->
-        <article class="highlight-column col-icai">
-          <div class="column-accent-bar"></div>
-          <div class="column-header">
-            <div class="column-icon-wrap icon-blue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
-            </div>
-            <div>
-              <span class="column-label">ICAI</span>
-              <h3 class="column-title">Chartered Accountancy</h3>
-            </div>
+        <div class="pillar-card">
+          <div class="pillar-top">
+            <span class="pillar-badge badge-blue">ICAI</span>
+            <h3>Chartered Accountancy</h3>
           </div>
-          <div class="column-body">
-            <div class="highlight-item-box">
-              <div class="item-tag tag-blue">Mandatory Professional Training</div>
-              <p class="item-text">Doing two courses of 15 days:</p>
-              <ul class="clean-list">
+          <div class="pillar-content">
+            <div class="inner-box">
+              <span class="box-label">Mandatory Courses</span>
+              <p class="box-main">Doing two 15-day courses:</p>
+              <ul class="bullet-list">
                 <li><strong>ITT:</strong> Information Technology Training (15 Days)</li>
                 <li><strong>OC:</strong> Orientation Course (15 Days)</li>
               </ul>
             </div>
-            <p class="column-note">Undergoing comprehensive training focused on professional presentation, office automation, ERP tools, financial datasets, and corporate etiquette.</p>
+            <p class="pillar-desc">Practical training in accounting software, corporate presentation, office automation, and ethics.</p>
           </div>
-        </article>
+        </div>
 
         <!-- Column 2: ICMAI -->
-        <article class="highlight-column col-icmai">
-          <div class="column-accent-bar"></div>
-          <div class="column-header">
-            <div class="column-icon-wrap icon-emerald">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+        <div class="pillar-card">
+          <div class="pillar-top">
+            <span class="pillar-badge badge-amber">ICMAI</span>
+            <h3>Cost &amp; Management</h3>
+          </div>
+          <div class="pillar-content">
+            <div class="inner-box">
+              <span class="box-label">National Ranking</span>
+              <p class="box-main"><strong>AIR 30</strong> in National Youth Commerce Olympiad (NYCO) 2024.</p>
             </div>
-            <div>
-              <span class="column-label">ICMAI</span>
-              <h3 class="column-title">Cost & Management</h3>
+            <div class="inner-box mt-3">
+              <span class="box-label">Foundation</span>
+              <p class="box-main">Cleared CMA Foundation on first attempt.</p>
             </div>
           </div>
-          <div class="column-body">
-            <div class="highlight-item-box">
-              <div class="item-tag tag-emerald">National Competition</div>
-              <h4 class="box-heading">AIR 30 in NYCO Olympiad 2024</h4>
-              <p class="item-text">Attained All India Rank 30 in the National Youth Commerce Olympiad conducted by the Institute of Cost Accountants of India (ICMAI).</p>
-            </div>
-            <div class="highlight-item-box mt-3">
-              <div class="item-tag tag-emerald">CMA Foundation</div>
-              <p class="item-text">Cleared on the first attempt, laying a strong groundwork for management accounting and cost analytics.</p>
-            </div>
-          </div>
-        </article>
+        </div>
 
         <!-- Column 3: IIM Bangalore -->
-        <article class="highlight-column col-iimb">
-          <div class="column-accent-bar"></div>
-          <div class="column-header">
-            <div class="column-icon-wrap icon-purple">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        <div class="pillar-card">
+          <div class="pillar-top">
+            <span class="pillar-badge badge-purple">IIM Bangalore</span>
+            <h3>Student Leadership</h3>
+          </div>
+          <div class="pillar-content">
+            <div class="inner-box">
+              <span class="box-label">Community Head</span>
+              <p class="box-main">Managing biggest unofficial community of <strong>1,000+ peers</strong> in IIMB BBA DBE.</p>
             </div>
-            <div>
-              <span class="column-label">IIMB</span>
-              <h3 class="column-title">Student Leadership</h3>
+            <div class="inner-box mt-3">
+              <span class="box-label">Student Media</span>
+              <p class="box-main">Running student-led newspaper <strong>DBE Times</strong>.</p>
+            </div>
+            <div class="inner-box mt-3">
+              <span class="box-label">Mentorship</span>
+              <p class="box-main">Conducting Google Meets providing real value, senior guidance, and peer engagement.</p>
             </div>
           </div>
-          <div class="column-body">
-            <div class="highlight-item-box">
-              <div class="item-tag tag-purple">Community Leadership</div>
-              <p class="item-text"><strong>Managing biggest unofficial community of 1000 plus</strong> IIMB BBA DBE students, providing study resources, schedule reminders, and peer support.</p>
-            </div>
-            <div class="highlight-item-box mt-3">
-              <div class="item-tag tag-purple">Student Media</div>
-              <p class="item-text"><strong>Running a student led newspaper DBE Times</strong>, curating content, layout design, and educational editorials.</p>
-            </div>
-            <div class="highlight-item-box mt-3">
-              <div class="item-tag tag-purple">Interactive Mentorship</div>
-              <p class="item-text"><strong>Conducting Google Meets</strong> which provides value and help students getting engage with seniors, CA All India Rankers, and coursework guidance.</p>
-            </div>
-          </div>
-        </article>
+        </div>
 
-        <!-- Column 4: Three Corporate Job Simulation Certificates -->
-        <article class="highlight-column col-cert">
-          <div class="column-accent-bar"></div>
-          <div class="column-header">
-            <div class="column-icon-wrap icon-amber">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+        <!-- Column 4: Corporate Job Simulations -->
+        <div class="pillar-card">
+          <div class="pillar-top">
+            <span class="pillar-badge badge-slate">Industry</span>
+            <h3>Job Simulations</h3>
+          </div>
+          <div class="pillar-content">
+            <div class="cert-item">
+              <span class="cert-company">PwC US</span>
+              <strong class="cert-name">Audit Job Simulation</strong>
+              <p class="cert-note">Financial statement verification and audit testing.</p>
             </div>
-            <div>
-              <span class="column-label">Certificates</span>
-              <h3 class="column-title">Job Simulations</h3>
+            <div class="cert-item">
+              <span class="cert-company">JPMorgan Chase</span>
+              <strong class="cert-name">Investment Banking Simulation</strong>
+              <p class="cert-note">Financial modeling and M&amp;A valuation framework.</p>
+            </div>
+            <div class="cert-item">
+              <span class="cert-company">Accenture North America</span>
+              <strong class="cert-name">Data Analytics &amp; Visualization</strong>
+              <p class="cert-note">Data cleanup, KPI formulation, and insight dashboards.</p>
             </div>
           </div>
-          <div class="column-body">
-            <div class="cert-card">
-              <span class="cert-pill pill-pwc">PwC US</span>
-              <h4 class="cert-title">Audit Job Simulation</h4>
-              <p class="cert-desc">Hands-on experience in financial statement analysis, audit testing, risk evaluation, and documentation standards.</p>
-            </div>
-            <div class="cert-card">
-              <span class="cert-pill pill-jpmorgan">JPMorgan Chase</span>
-              <h4 class="cert-title">Investment Banking Simulation</h4>
-              <p class="cert-desc">M&amp;A advisory frameworks, financial valuation methodologies, and corporate finance presentations.</p>
-            </div>
-            <div class="cert-card">
-              <span class="cert-pill pill-accenture">Accenture North America</span>
-              <h4 class="cert-title">Data Analytics &amp; Visualization</h4>
-              <p class="cert-desc">Project simulation cleaning large datasets, formulating strategic metrics, and presenting business insights.</p>
-            </div>
-          </div>
-        </article>
+        </div>
 
-        <!-- Column 5: Table Tennis & Sports Leadership (Structured, NO paragraph, NO 'class') -->
-        <article class="highlight-column col-sports">
-          <div class="column-accent-bar"></div>
-          <div class="column-header">
-            <div class="column-icon-wrap icon-coral">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12 12 16 14"></polygon></svg>
-            </div>
-            <div>
-              <span class="column-label">Athletics &amp; Leadership</span>
-              <h3 class="column-title">Table Tennis</h3>
-            </div>
+        <!-- Column 5: Table Tennis & Sports Leadership -->
+        <div class="pillar-card">
+          <div class="pillar-top">
+            <span class="pillar-badge badge-coral">Sports</span>
+            <h3>Table Tennis</h3>
           </div>
-          <div class="column-body">
-            <div class="item-tag tag-coral">National Podiums (Delhi SGFI)</div>
-            
-            <div class="podium-grid">
-              <div class="podium-item">
-                <span class="medal-badge medal-bronze">3rd Place (Bronze)</span>
-                <span class="podium-category">Under-14 Category</span>
-                <span class="podium-team">Delhi SGFI Nationals</span>
+          <div class="pillar-content">
+            <span class="box-label">Delhi SGFI Nationals (Podiums)</span>
+            <div class="podiums-stack">
+              <div class="podium-row">
+                <span class="medal-tag medal-bronze">3rd Place (Bronze)</span>
+                <span class="podium-info">Under-14 Category</span>
               </div>
-              <div class="podium-item">
-                <span class="medal-badge medal-silver">2nd Place (Silver)</span>
-                <span class="podium-category">Under-14 Category</span>
-                <span class="podium-team">Delhi SGFI Nationals</span>
+              <div class="podium-row">
+                <span class="medal-tag medal-silver">2nd Place (Silver)</span>
+                <span class="podium-info">Under-14 Category</span>
               </div>
-              <div class="podium-item">
-                <span class="medal-badge medal-silver">2nd Place (Silver)</span>
-                <span class="podium-category">Under-17 Category</span>
-                <span class="podium-team">Delhi SGFI Nationals</span>
+              <div class="podium-row">
+                <span class="medal-tag medal-silver">2nd Place (Silver)</span>
+                <span class="podium-info">Under-17 Category</span>
               </div>
             </div>
 
-            <div class="sports-leadership-banner">
-              <div class="leadership-quote-mark">“</div>
-              <p class="leadership-statement">
-                i was managing whole sports for my school conducting trials every year and guiding them
+            <div class="leadership-quote-card">
+              <p class="leadership-text">
+                &ldquo;I was managing the table tennis programme for my school, conducting trials every year and guiding juniors.&rdquo;
               </p>
             </div>
           </div>
-        </article>
+        </div>
 
       </div>
     </section>
 
     <!-- Resume Section -->
     <section id="resume">
-      <div class="resume-intro">
+      <div class="section-title-wrap resume-header-row">
         <div>
-          <div class="section-tag">Formal Curriculum Vitae</div>
           <h2>Resume</h2>
+          <p class="section-lead">Print-ready curriculum vitae and formal summary.</p>
         </div>
-        <a class="download button button-outline" href="resume.pdf" download>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-          <span>Download Resume (PDF)</span>
+        <a class="button button-secondary" href="resume.pdf" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download PDF</span>
         </a>
       </div>
 
-      <article class="sheet">
-        <header class="sheet-top">
-          <h2 class="sheet-name">SAMARTH SINGH</h2>
-          <p class="sheet-contact">New Delhi, India &nbsp;|&nbsp; <a href="mailto:samarthsingh206@gmail.com">samarthsingh206@gmail.com</a></p>
+      <article class="resume-paper">
+        <header class="resume-top">
+          <h2 class="resume-name">SAMARTH SINGH</h2>
+          <p class="resume-contact">New Delhi, India &bull; <a href="mailto:samarthsingh206@gmail.com">samarthsingh206@gmail.com</a></p>
         </header>
 
-        <h3 class="sheet-heading">Profile</h3>
-        <p class="sheet-p">Aspiring Chartered Accountant and Cost and Management Accountant. First-year student of IIM Bangalore (BBA DBE), leading an unofficial student community of 1,000+ members and bringing proven competitive excellence in commerce and national sports.</p>
+        <h3 class="resume-section-heading">Profile</h3>
+        <p class="resume-p">First-year student at IIM Bangalore (BBA DBE) and aspiring Chartered Accountant and Cost and Management Accountant. Cleared CA and CMA Foundations on the first attempt, ranked AIR 30 in NYCO, and leads an active community of 1,000+ peers.</p>
 
-        <h3 class="sheet-heading">Experience & Leadership</h3>
-        <div class="resume-entry">
-          <p class="row entry-head"><span>Unofficial IIMB BBA DBE Student Community</span><span class="date">2026 – Present</span></p>
+        <h3 class="resume-section-heading">Experience &amp; Leadership</h3>
+        <div class="resume-block">
+          <div class="resume-row">
+            <strong>Unofficial IIMB BBA DBE Student Community</strong>
+            <span class="resume-date">2026 – Present</span>
+          </div>
           <ul>
-            <li>Managing the biggest unofficial community of 1,000+ peers; curate senior-sourced academic material and critical timeline notifications.</li>
-            <li>Organised and conducted value-driven Google Meets featuring subject-matter toppers and CA All India Rankers to foster engagement and guidance.</li>
+            <li>Manage an unofficial student community of 1,000+ members, coordinating academic resources and deadline reminders.</li>
+            <li>Organized and hosted Google Meets with senior rankers and CA toppers for academic guidance.</li>
           </ul>
         </div>
 
-        <div class="resume-entry">
-          <p class="row entry-head"><span>DBE Times (Student-Led Publication)</span><span class="date">October – November 2026</span></p>
+        <div class="resume-block">
+          <div class="resume-row">
+            <strong>DBE Times (Student Publication)</strong>
+            <span class="resume-date">2026</span>
+          </div>
           <ul>
-            <li>Founded and run the student-led newspaper covering campus updates, academic breakdowns, and productivity frameworks.</li>
+            <li>Founded and publish student-led newsletter covering university news, study guides, and campus updates.</li>
           </ul>
         </div>
 
-        <div class="resume-entry">
-          <p class="row entry-head"><span>School Sports Programme & Table Tennis Leadership</span></p>
+        <div class="resume-block">
+          <div class="resume-row">
+            <strong>School Table Tennis Programme &amp; Leadership</strong>
+          </div>
           <ul>
-            <li>Managed whole sports for my school, conducting trials every year and guiding the teams.</li>
+            <li>Managed the table tennis programme for my school, conducting annual trials and guiding juniors.</li>
           </ul>
         </div>
 
-        <h3 class="sheet-heading">Education & Professional Qualifications</h3>
-        <p class="row"><span>IIM Bangalore: BBA in Digital Business and Entrepreneurship</span><span class="date">2026–2029 (Pursuing)</span></p>
-        <p class="row"><span>CMA Foundation: Cleared (First Attempt)</span><span class="date">December 2025</span></p>
-        <p class="row"><span>CA Foundation: Cleared (First Attempt)</span><span class="date">September 2025</span></p>
-        <p class="row"><span>Class XII (Commerce with Mathematics): 87.2%</span><span class="date">2025</span></p>
-        <p class="row"><span>Class X: 88.8%</span><span class="date">2023</span></p>
+        <h3 class="resume-section-heading">Education &amp; Qualifications</h3>
+        <div class="resume-row">
+          <span><strong>IIM Bangalore:</strong> BBA in Digital Business and Entrepreneurship</span>
+          <span class="resume-date">2026–2029 (Pursuing)</span>
+        </div>
+        <div class="resume-row">
+          <span><strong>CMA Foundation:</strong> Cleared on First Attempt</span>
+          <span class="resume-date">Dec 2025</span>
+        </div>
+        <div class="resume-row">
+          <span><strong>CA Foundation:</strong> Cleared on First Attempt</span>
+          <span class="resume-date">Sep 2025</span>
+        </div>
+        <div class="resume-row">
+          <span><strong>Class XII (CBSE):</strong> 87.2% (Commerce with Mathematics)</span>
+          <span class="resume-date">2025</span>
+        </div>
+        <div class="resume-row">
+          <span><strong>Class X (CBSE):</strong> 88.8%</span>
+          <span class="resume-date">2023</span>
+        </div>
 
-        <h3 class="sheet-heading">Certifications & Accolades</h3>
+        <h3 class="resume-section-heading">Achievements &amp; Training</h3>
         <ul>
-          <li><strong>National Youth Commerce Olympiad (ICMAI):</strong> All India Rank 30 (2024).</li>
+          <li><strong>All India Rank 30:</strong> CMA National Youth Commerce Olympiad (ICMAI 2024).</li>
           <li><strong>ICAI Professional Courses:</strong> 15-day Information Technology Training (ITT) &amp; 15-day Orientation Course (OC).</li>
-          <li><strong>National Table Tennis (Delhi SGFI):</strong> 3-time National Podium Finisher (Under-14 3rd place, Under-14 2nd place, Under-17 2nd place).</li>
-          <li><strong>Corporate Job Simulations:</strong> PwC US Audit; JPMorgan Chase Investment Banking; Accenture North America Data Analytics &amp; Visualization.</li>
+          <li><strong>National Table Tennis:</strong> 3-time National Podium Finisher for Delhi (SGFI) in Under-14 and Under-17 categories.</li>
+          <li><strong>Job Simulations:</strong> PwC US (Audit), JPMorgan Chase (Investment Banking), Accenture North America (Data Analytics).</li>
         </ul>
       </article>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-      <div class="contact-card">
-        <div class="contact-decoration" aria-hidden="true"></div>
-        <div class="section-tag">Get In Touch</div>
-        <h2>Let's Connect &amp; Collaborate</h2>
-        <div class="section-ornament">✦ ═ ☀️ ═ ✦</div>
-        <p class="contact-text">
-          Whether you would like to discuss commerce, student community initiatives, digital business, or potential collaborations, I would love to hear from you.
-        </p>
-
+      <div class="contact-box">
+        <h2>Let's Connect</h2>
+        <p class="contact-subtext">Open to academic networking, peer discussions, and student community collaborations.</p>
         <div class="contact-actions">
-          <a class="button button-primary" href="mailto:samarthsingh206@gmail.com?subject=Let%27s%20Collaborate">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <span>samarthsingh206@gmail.com</span>
-          </a>
-          <a class="button button-outline" href="#hero">Back to Top</a>
+          <a class="button button-primary" href="mailto:samarthsingh206@gmail.com">samarthsingh206@gmail.com</a>
+          <a class="button button-ghost" href="#hero">Back to Top &uarr;</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-inner">
-      <p>&copy; 2026 Samarth Singh &bull; Aspiring CA &amp; CMA &bull; IIMB BBA DBE</p>
-      <div class="footer-links">
+    <div class="footer-wrap">
+      <p>&copy; 2026 Samarth Singh &bull; IIM Bangalore BBA DBE &bull; Aspiring CA &amp; CMA</p>
+      <div class="footer-nav">
         <a href="#hero">Home</a>
-        <a href="#academic-cycle">Academic Cycle</a>
+        <a href="#journey">Journey</a>
         <a href="#highlights">Highlights</a>
         <a href="#resume">Resume</a>
       </div>
     </div>
   </footer>
-
-  <!-- Theme Toggle Script -->
-  <script>
-    const themeBtn = document.getElementById('themeToggle');
-    const root = document.documentElement;
-    const body = document.body;
-    const themeIcon = document.querySelector('.theme-icon');
-    const themeLabel = document.querySelector('.theme-label');
-
-    const currentTheme = localStorage.getItem('samarth_theme') || 'bright';
-    applyTheme(currentTheme);
-
-    function applyTheme(theme) {
-      if (theme === 'dark') {
-        root.setAttribute('data-theme', 'dark');
-        body.classList.remove('theme-bright');
-        body.classList.add('theme-dark');
-        if (themeIcon) themeIcon.textContent = '🌙';
-        if (themeLabel) themeLabel.textContent = 'Night';
-      } else {
-        root.setAttribute('data-theme', 'bright');
-        body.classList.remove('theme-dark');
-        body.classList.add('theme-bright');
-        if (themeIcon) themeIcon.textContent = '☀️';
-        if (themeLabel) themeLabel.textContent = 'Bright';
-      }
-    }
-
-    if (themeBtn) {
-      themeBtn.addEventListener('click', () => {
-        const isDark = root.getAttribute('data-theme') === 'dark';
-        const newTheme = isDark ? 'bright' : 'dark';
-        localStorage.setItem('samarth_theme', newTheme);
-        applyTheme(newTheme);
-      });
-    }
-  </script>
 
 </body>
 </html>
